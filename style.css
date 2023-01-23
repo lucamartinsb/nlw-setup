@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090A;
+  color: white;
+
+/*   display: grid;
+  place-items: center; */
+
+  height: 100vh;
+}
+
+header {
+  background-color: #09090A;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 48px;
+
+  position: fixed;
+
+  width: 100vw;
+}
+
+button {
+  padding: 16px 24px; /*16 em cima e embaixo e 24 nas laterais*/
+  border: 1px solid #8B5CF6;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: 'Inter';
+  font-wight: 600;
+  font-size: 16px;
+  line-height: 125%
+}
+
+#form-habits {
+  display: flex;
+
+  padding: 182px 48px 48px; /*Espaço de 182px para ficar abaixo do header*/
+  width: fit-content; /* Encaixar o conteúdo na largura;
+  Ajustar o espaçamento que faltava na direita*/
+}
+
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 58px;
+
+}
+
+.habit {
+
+  width: 64px;
+  height: 64px;
+
+ /*Emojis também são como textos*/
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+
+}
+
+.day {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.day div { /*para cada div em class="day"*/
+  margin-bottom: 8px;
+  
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  line-heigth: 125%;
+
+  color: #A1A1AA;
+}
+
+
+input {
+  appearance: none; /*preciso tirar aparencia para usar border*/
+  -webkit-appearance: none; /*wekit é o vendor prefix, usando para safari, chrome, opera...*/
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #27272A;
+  border-radius: 8px;
+
+  background: #18181B;
+}
+
+/*Pseudo-selector*/
+input:checked {
+  background: #8B5CF6;
+  border: 2px solid #A78BFA;
+}
+
+@media (max-width: 480px) { /*Se o dispositivo tiver de 0 até 570px na largura da tela*/
+  button div {
+    display: none;
+    
+  }
+
+}
