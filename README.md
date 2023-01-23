@@ -32,7 +32,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Oprojeto Habtis é um app para ajudar a rastrear os hábitos.
+O projeto Habits é um app para ajudar a rastrear os hábitos.
+
+- [Visite o projeto online] (https://lucamartinsb.github.io/nlw-setup)
 
 ## 🔖 Layout
 
